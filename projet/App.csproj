@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D63555E-D9AA-40A5-A313-0FF4D2F254DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>form</RootNamespace>
+    <AssemblyName>form</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NHibernate\Required_Bins\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajoutCompte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajoutCompte.Designer.cs">
+      <DependentUpon>ajoutCompte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajoutWifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajoutWifi.Designer.cs">
+      <DependentUpon>ajoutWifi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexion.Designer.cs">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion.Designer.cs">
+      <DependentUpon>Gestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdp.Designer.cs">
+      <DependentUpon>mdp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifierCompte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifierCompte.Designer.cs">
+      <DependentUpon>modifierCompte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifierWifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifierWifi.Designer.cs">
+      <DependentUpon>modifierWifi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="supprimerCompte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supprimerCompte.Designer.cs">
+      <DependentUpon>supprimerCompte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supprimerWifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supprimerWifi.Designer.cs">
+      <DependentUpon>supprimerWifi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ajoutCompte.resx">
+      <DependentUpon>ajoutCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajoutWifi.resx">
+      <DependentUpon>ajoutWifi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connexion.resx">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion.resx">
+      <DependentUpon>Gestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdp.resx">
+      <DependentUpon>mdp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifierCompte.resx">
+      <DependentUpon>modifierCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifierWifi.resx">
+      <DependentUpon>modifierWifi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="supprimerCompte.resx">
+      <DependentUpon>supprimerCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supprimerWifi.resx">
+      <DependentUpon>supprimerWifi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{4389055f-8318-45c0-a674-0d218d723c3c}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{e88e47d6-d538-431d-81b3-9dcd4dbccc40}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

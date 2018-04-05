@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Domain"
+                   namespace="Domain">
+
+  <class name="LiaisonUtilCompte" table="liaisonUtilCompte">
+    <id name="Id" column="utilCompte_id" type="int">
+      <generator class="native"></generator>
+    </id>
+    <many-to-one name="Utilisateur" class="Utilisateur" column="util_id"/>
+    <many-to-one name="Compte" class="Compte" column="compte_id"/>
+  </class>
+
+</hibernate-mapping>

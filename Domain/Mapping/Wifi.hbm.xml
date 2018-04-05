@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Domain"
+                   namespace="Domain">
+
+  <class name="Wifi" table="wifi">
+    <id name="Id" column="wifi_id" type="int">
+      <generator class="native"></generator>
+    </id>
+    <property name="SSID" column="wifi_SSID" not-null="true"/>
+    <property name="Mdp" column="wifi_mdp" not-null="true"/>
+  </class>
+
+</hibernate-mapping>
